@@ -1,16 +1,9 @@
-
-TITLE: 
-Module - 100% Fully Responsive Free HTML5 Bootstrap Template
-
-AUTHOR:
-DESIGNED & DEVELOPED by FREEHTML5.co
-
-Website: http://freehtml5.co/
-Twitter: http://twitter.com/fh5co
-Facebook: http://facebook.com/fh5co
+# site
+This repository contains the website for VirtualYou. This website began with the template called `Module` at
+http://freehtml5.co .
 
 
-CREDITS:
+## Credits
 
 Bootstrap
 http://getbootstrap.com/
