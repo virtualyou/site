@@ -1517,4 +1517,8 @@ figure {
   background: url(../images/hourglass.svg) center no-repeat #222222;
 }
 
+.dlw-no-col {
+  padding-left: 25px;
+  padding-right: 25px;
+}
 /*# sourceMappingURL=style.css.map */
