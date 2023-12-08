@@ -132,7 +132,7 @@
 
         <div id="fh5co-contact" class="fh5co-section-gray">
             <div class="container">
-                <form action="#">
+                <form onsubmit="onHold(); return false;">
                     <div class="row animate-box">
                         <div class="col-md-6">
                             <h3 class="section-title">Our Address</h3>
@@ -141,8 +141,8 @@
                             <ul class="contact-info">
                                 <li><i class="icon-location-pin"></i>2932 Tram Road, Fuquay-Varina, NC 27526-9362</li>
                                 <li><i class="icon-phone2"></i>1-919-605-6529</li>
-                                <li><i class="icon-mail"></i><a href="#">me@dlwhitehurst.com</a></li>
-                                <li><i class="icon-globe2"></i><a href="#">https://app.virtualyou.info</a></li>
+                                <li><i class="icon-mail"></i><a href="mailto:me@dlwhitehurst.com">me@dlwhitehurst.com</a></li>
+                                <li><i class="icon-globe2"></i><a href="https://app.virtualyou.info" target="_blank">https://app.virtualyou.info</a></li>
                             </ul>
                         </div>
                         <div class="col-md-6">
@@ -174,6 +174,12 @@
                 </form>
             </div>
         </div>
+
+        <script>
+            function onHold() {
+                alert('Feature not available, email me directly me@dlwhitehurst.com');
+            }
+        </script>
         <!-- END fh5co-contact -->
 
         <footer>
