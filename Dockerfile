@@ -1,5 +1,5 @@
-# Use an official Node.js runtime as a parent image
-FROM node:18-alpine
+# Use the official nginx image as the base image
+FROM nginx
 
 # Set the working directory to /src
 WORKDIR /app
@@ -7,8 +7,20 @@ WORKDIR /app
 # Copy the current directory contents into the container at /src
 COPY . /app
 
-# Make port 80 available to the world outside this container
-EXPOSE 5000
+# Copy the default nginx.conf file to the container
+COPY nginx.conf /etc/nginx/nginx.conf
+
+# Remove the default nginx website
+RUN rm -rf /usr/share/nginx/html/*
+
+# Copy the Vite /dist folder to the container
+COPY . /usr/share/nginx/html
+
+# Expose port 80
+EXPOSE 80
+
+# Start nginx and keep it running in the foreground
+CMD ["nginx", "-g", "daemon off;"]
 
 # Run `node index.ts` when the container launches
 CMD ["node", "index.ts"]
