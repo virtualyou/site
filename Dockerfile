@@ -23,4 +23,4 @@ EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
 
 # Run `node index.ts` when the container launches
-CMD ["node", "index.ts"]
+#CMD ["node", "index.ts"]
