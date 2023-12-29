@@ -9,7 +9,7 @@ const server = http.createServer((req, res) => {
     console.log(`Request for ${req.url} received.`);
 
     let filePath = '.' + req.url;
-    if (filePath == './') {
+    if (filePath === './') {
         filePath = './index.html';
     }
 
@@ -38,7 +38,7 @@ const server = http.createServer((req, res) => {
 
     fs.readFile(filePath, (error, content) => {
         if (error) {
-            if (error.code == 'ENOENT') {
+            if (error.code === 'ENOENT') {
                 res.writeHead(404, { 'Content-Type': 'text/html' });
                 res.end('<h1>404 Not Found</h1><p>The requested URL was not found on this server.</p>');
             } else {
