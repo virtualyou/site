@@ -1,5 +1,10 @@
 # site
-This repository contains the website for VirtualYou. This website began with the template called `Module` at
+
+This site is inactive, i.e. the contents here are NO LONGER HOSTED
+at https://site.virtualyou.info 
+
+This repository contains the old website for VirtualYou. This website began
+with the template called `Module` at
 http://freehtml5.co .
 
 
